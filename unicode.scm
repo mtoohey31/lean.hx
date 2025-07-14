@@ -19,8 +19,11 @@
       (if (equal? (string-length input) 0)
         (helix.misc.set-error! "empty unicode abbreviation input")
         (let ([expansion (hash-get abbrs (reduce string-shorter matching-abbrs))])
-          ; TODO: Surrounding expansions
-          (helix.static.insert_string (car expansion)))))))
+          (if (equal? (length expansion) 1)
+            (helix.static.insert_string (car expansion))
+            (let ([rhs (car (cdr expansion))])
+              (helix.static.insert_string (string-append (car expansion) rhs))
+              (repeat helix.static.move_char_left (length (string->list rhs))))))))))
 
 ; TODO: Eager replacement
 (provide lean-unicode)

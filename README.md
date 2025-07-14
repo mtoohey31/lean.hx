@@ -6,7 +6,6 @@ A Lean 4 plugin for Helix. Currently just getting started.
 
 - [x] Unicode input
   - [ ] Eager replacement
-  - [ ] Surrounding expansions
 - [ ] Info view
 - [ ] File-specific server restart
 - [ ] Progress gutter

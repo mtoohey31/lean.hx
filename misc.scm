@@ -17,6 +17,9 @@
       (car lst)
       (f (car lst) (reduce f (cdr lst))))))
 
+(provide repeat)
+(define (repeat f n) (if (> n 0) (let ([_ (f)]) (repeat f (- n 1))) '()))
+
 (provide hash-map)
 (define (hash-map f map)
   (foldl
