@@ -30,8 +30,7 @@
 (define (add-inlay-hint)
   (set! inlay-ids
     (helix.misc.add-inlay-hint
-      (helix.static.range->from
-        (helix.static.selection->primary-range (helix.static.current-selection-object)))
+      (helix.misc.cursor-position)
       (string-append "\\" state))))
 
 (define (clear-inlay-hint)
