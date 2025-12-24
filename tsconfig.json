@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "noEmit": true,
+    "paths": {
+      "/infoview/*": ["./vendor/vscode-lean4/lean4-infoview/dist/*"]
+    },
+    "strict": true,
+    "target": "es2022"
+  },
+  "files": ["index.mjs"]
+}

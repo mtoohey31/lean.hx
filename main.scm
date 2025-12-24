@@ -1,2 +1,3 @@
+(require "infoview.scm")
 (require "unicode.scm")
-(provide lean-unicode)
+(provide lean-infoview lean-unicode)

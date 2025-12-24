@@ -4,3 +4,13 @@ command = "steel-language-server"
 [[language]]
 name = "scheme"
 language-servers = ["steel"]
+
+[[language]]
+name = "html"
+formatter = { command = "prettier", args = ["--parser", "html"] }
+auto-format = true
+
+[[language]]
+name = "javascript"
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+auto-format = true

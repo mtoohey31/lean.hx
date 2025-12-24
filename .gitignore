@@ -1,0 +1,5 @@
+/.direnv
+result
+
+/node_modules/
+/target/

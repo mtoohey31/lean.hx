@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" style="height: 100%">
+  <head>
+    <meta charset="utf-8" />
+    <title>lean.hx infoview</title>
+    <script type="module"></script>
+    <script src="index.mjs" type="module"></script>
+    <link rel="stylesheet" href="infoview/index.css" />
+    <style>
+      body {
+        --vscode-font-family: system-ui, sans-serif;
+        --vscode-font-size: 13px;
+        --vscode-font-weight: normal;
+
+        --vscode-diffEditor-insertedTextBackground: rgba(184, 187, 38, 0.19);
+        --vscode-diffEditor-removedTextBackground: rgba(251, 73, 52, 0.19);
+
+        --vscode-dropdown-background: #282828;
+        --vscode-dropdown-border: #3c3836;
+        --vscode-dropdown-foreground: #ebdbb2;
+
+        --vscode-editorHoverWidget-background: #282828;
+        --vscode-editorHoverWidget-border: #3c3836;
+        --vscode-editorHoverWidget-foreground: #ebdbb2;
+
+        --vscode-textCodeBlock-background: rgba(10, 10, 10, 0.4);
+
+        --vscode-widget-shadow: rgba(40, 40, 40, 0.19);
+
+        --vscode-editor-background: #282828;
+        --vscode-editor-foreground: #ebdbb2;
+        --vscode-editor-selectionBackground: rgba(104, 157, 106, 0.25);
+
+        --vscode-editor-font-family: monospace;
+        --vscode-editor-font-size: 14px;
+        --vscode-editor-font-weight: normal;
+
+        --vscode-editorOverviewRuler-rangeHighlightForeground: #bdae93;
+
+        --vscode-lean4-infoView\.hypothesisName: #ffcc00;
+        --vscode-lean4-infoView\.inaccessibleHypothesisName: #ebdbb2;
+        --vscode-lean4-infoView\.goalCount: #569cd6;
+        --vscode-lean4-infoView\.turnstile: #569cd6;
+        --vscode-lean4-infoView\.caseLabel: #a1df90;
+
+        background-color: var(--vscode-editor-background);
+        color: var(--vscode-editor-foreground);
+        font-family: var(--vscode-font-family);
+        font-weight: var(--vscode-font-weight);
+        font-size: var(--vscode-font-size);
+      }
+    </style>
+  </head>
+  <body id="infoview-root"></body>
+</html>
